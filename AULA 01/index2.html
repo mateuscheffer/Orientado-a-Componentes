@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+<p style="color: red">Conteudo</p>
+<h1>Título</h1>
+
+<script>
+
+function identificarParImpar(lista) {
+    for (var i = 0; i < lista.length; i++) {
+        if (lista[i] % 2 === 0) {
+            console.log(lista[i] + " é um número par.");
+        } else {
+            console.log(lista[i] + " é um número ímpar.");
+        }
+    }
+}
+
+var numeros = [3, 8, 12, 5, 20];
+identificarParImpar(numeros);
+
+
+    
+</script>
+</html>
