@@ -29,6 +29,7 @@ function contato(){
     const section = document.getElementById("sessao")
     section.innerHTML = `
         <form>
+            <br>
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required><br><br>
 
