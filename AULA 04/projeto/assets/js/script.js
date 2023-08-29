@@ -39,7 +39,7 @@ function contato(){
             <label for="telefone">Telefone:</label>
             <input type="text" id="telefone" name="telefone" required><br><br>
 
-            <button type="button" id="submitButton">Enviar</button>
+            <button class ="bg-dark text-success" type="button" id="submitButton">Enviar</button>
         </form>
     `
     const button = document.getElementById("submitButton").addEventListener("click", submitForms)
@@ -56,17 +56,26 @@ function submitForms(){
 
     const section = document.getElementById("sessao")
     section.innerHTML = `
-        <table>
-            <tr>
-                <th>Nome</th>
-                <th>Email</th>
-                <th>Telefone</th>
-            </tr>
-            <tr>
-                <td>${contato.nome}</td>
-                <td>${contato.email}</td>
-                <td>${contato.telefone}</td>
-            </tr>
+        <table class="text-center">
+            
+                <div>
+                    <tr>
+                        <th>Nome</th>
+                        <td>${contato.nome}</td>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <th>Email</th>
+                        <td>${contato.email}</td>
+                    </tr>
+                </div>
+                <div>
+                <tr>
+                    <th>Telefone</th>
+                    <td>${contato.telefone}</td>
+                </tr>
+            </div>
         </table>`
 
 
